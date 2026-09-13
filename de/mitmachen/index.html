@@ -225,7 +225,7 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
             <span class="msg">Bitte wählen Sie, ab wann Sie anfangen könnten.</span>
           </div>
 
-          <div class="field"><label for="f-cv">Lebenslauf oder LinkedIn</label><input id="f-cv" type="text" placeholder="https://..."><p class="hint">Laden Sie Ihren Lebenslauf zu Google Drive oder Dropbox hoch und fügen Sie den Link hier ein, oder geben Sie Ihr LinkedIn-Profil an. Bitte achten Sie darauf, dass der Link für alle mit dem Link zugänglich ist.</p><span class="msg">Bitte geben Sie einen Link zu Ihrem Lebenslauf oder LinkedIn-Profil an.</span></div>
+          <div class="field"><label for="f-cv">Lebenslauf oder LinkedIn</label><input id="f-cv" type="text" placeholder="https://..."><p class="hint">Laden Sie Ihren Lebenslauf zu Google Drive oder Dropbox hoch und fügen Sie den Link hier ein, oder geben Sie Ihr LinkedIn-Profil an. Bitte achten Sie darauf, dass der Link für alle mit dem Link zugänglich ist.</p><span class="msg">Bitte geben Sie einen funktionierenden Link an, zum Beispiel https://linkedin.com/in/ihrname</span></div>
 
           <div class="field"><label for="f-msg">Was sollen wir sonst noch wissen? <span class="opt">(optional)</span></label><textarea id="f-msg" placeholder="Erfahrung im Support oder Back-Office, passende Schichten, weitere Sprachen."></textarea></div>
 
@@ -282,6 +282,7 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
 
   var form=document.getElementById('form'),btn=document.getElementById('submitBtn'),errEl=document.getElementById('formErr');
   var re=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  var reLink=/^(https?:\/\/)?[^\s.]+\.[a-z]{2,}([\/?#][^\s]*)?$/i;
   function field(id){return document.getElementById(id).closest('.field');}
   function mark(el,ok){el.classList.toggle('err',!ok);return ok;}
   function checked(name){return [].slice.call(document.querySelectorAll('input[name="'+name+'"]:checked'));}
@@ -299,7 +300,7 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
     ok=mark(document.getElementById('fs-swiss'),swiss.length===1)&&ok;
     ok=mark(document.getElementById('fs-roles'),roles.length>0)&&ok;
     ok=mark(field('f-start'),start.value!=='')&&ok;
-    ok=mark(field('f-cv'),cv.value.trim().length>3)&&ok;
+    ok=mark(field('f-cv'),reLink.test(cv.value.trim()))&&ok;
     ok=mark(document.getElementById('fs-consent'),consent.checked)&&ok;
     if(!ok){document.querySelector('.field.err').scrollIntoView({block:'center'});return;}
 

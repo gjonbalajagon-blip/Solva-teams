@@ -20,9 +20,18 @@ Context and rules for working on this project. Read before making changes.
 
 Static website. Plain HTML + CSS + tiny vanilla JS. No framework, no build step.
 
-- `index.html` — English (default)
-- `de/index.html` — German (`/de/`)
-- `assets/` — logo, favicons, images
+Every page is self-contained: its own `<style>` block and inline script. A change to shared parts (nav, footer, fonts, brand tokens) has to be repeated in each file.
+
+- `index.html` — home, English (`/`)
+- `de/index.html` — home, German (`/de/`)
+- `join/index.html` — talent pool form, English (`/join/`)
+- `de/mitmachen/index.html` — talent pool form, German (`/de/mitmachen/`)
+- `privacy/index.html` — privacy policy, English (`/privacy/`)
+- `de/datenschutz/index.html` — privacy policy, German (`/de/datenschutz/`)
+- `assets/` — logo, favicons, photos, share image
+- `assets/fonts/` — self-hosted Schibsted Grotesk and Hanken Grotesk (woff2). No Google Fonts: the site must make no third-party requests.
+
+Asset and page paths are **absolute** (`/assets/…`, `/de/…`) so they work from every folder. That means the site must be opened through a server, not by double-clicking a file.
 
 ---
 

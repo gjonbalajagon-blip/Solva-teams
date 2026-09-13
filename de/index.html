@@ -133,12 +133,12 @@ img,svg{display:block;max-width:100%}
 
 /* trust strip */
 .trust{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,3vw,40px);padding:26px 0}
-.trust .cell{display:flex;gap:13px;align-items:flex-start}
-.trust .cell svg{flex:0 0 auto;width:24px;height:24px;color:var(--blue);margin-top:2px}
+.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);padding:34px 0}
+.trust .cell{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;max-width:34ch;margin-inline:auto}
+.trust .cell svg{flex:0 0 auto;width:26px;height:26px;color:var(--blue)}
 .trust .cell b{font-size:15px;font-weight:700;color:var(--ink);display:block}
-.trust .cell span{font-size:13.5px;color:var(--slate)}
-@media(max-width:760px){.trust .wrap{grid-template-columns:1fr;gap:18px}}
+.trust .cell span{font-size:13.5px;color:var(--slate);display:block;margin-top:3px}
+@media(max-width:760px){.trust .wrap{grid-template-columns:1fr;gap:26px;padding:30px 0}}
 
 /* sections */
 section{padding:clamp(72px,10vw,124px) 0}
@@ -163,7 +163,6 @@ section{padding:clamp(72px,10vw,124px) 0}
 .roster .rl{font-size:13px;color:var(--slate)}
 .roster .pill{margin-left:auto;font-size:11.5px;font-weight:700;color:#0f7a4f;background:#e2f6ec;padding:5px 11px;border-radius:999px;display:inline-flex;gap:6px;align-items:center}
 .roster .pill::before{content:"";width:6px;height:6px;border-radius:50%;background:#1aa564}
-.roster .cap{margin-top:16px;font-size:12.5px;color:var(--slate)}
 
 /* process */
 .steps{margin-top:52px;display:grid;gap:20px}
@@ -211,7 +210,6 @@ section{padding:clamp(72px,10vw,124px) 0}
 .photo .frame{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.6);box-shadow:0 40px 80px -42px rgba(11,18,50,.5)}
 .photo .frame img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
 .photo .glow{position:absolute;inset:-12% -8% -16% -10%;z-index:-1;border-radius:28px;background:radial-gradient(60% 60% at 40% 30%,rgba(35,61,255,.4),transparent 70%);filter:blur(28px)}
-.photo .cap{margin-top:12px;font-size:12px;color:var(--slate);text-align:right}
 
 /* contact */
 .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,72px);align-items:start}
@@ -249,7 +247,6 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
 .foot-col a:hover{color:#fff}
 .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:13px;color:rgba(226,231,245,.5)}
 .foot-bottom .lang a[aria-current=true]{color:#fff}
-.foot-note{margin-top:16px;font-size:11.5px;color:rgba(226,231,245,.34);max-width:74ch}
 
 /* floating CTAs */
 .fab{position:fixed;right:22px;bottom:22px;z-index:900;display:flex;flex-direction:column;align-items:flex-end;gap:10px;transition:opacity .25s var(--ease),visibility .25s}
@@ -324,7 +321,7 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
   <!-- TRUST -->
   <div class="trust">
     <div class="wrap">
-      <div class="cell reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg><div><b>Notstrom &amp; zweite Internetleitung</b><span>Generator und zweite Leitung an jedem Platz.</span></div></div>
+      <div class="cell reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><b>Ein festes Team, das bleibt</b><span>Wir stellen die Agenten ein, schulen und halten sie, nur für Sie.</span></div></div>
       <div class="cell reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 5h12M9 3v2M11 5c0 5-3 9-7 11M7 8c1 4 4 7 7 8"/><path d="m14 20 4-9 4 9M15.5 17h5"/></svg><div><b>Hochdeutsch &amp; Schweizerdeutsch</b><span>Getestet, bevor jemand auf Ihrem Account startet.</span></div></div>
       <div class="cell reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><div><b>DSGVO-konform ab Werk</b><span>EU-Datenverarbeitung, AVV und NDAs.</span></div></div>
     </div>
