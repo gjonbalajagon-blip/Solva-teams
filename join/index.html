@@ -77,13 +77,15 @@ img,svg{display:block;max-width:100%}
 .lang a[aria-current=true]{color:var(--blue)}
 .lang i{opacity:.4;font-style:normal}
 .menu-btn{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:8px}
+.lang-bar{display:none;margin-left:auto;margin-right:4px}
 .menu-btn svg{width:26px;height:26px}
 @media(max-width:940px){
   .navlinks{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);box-shadow:0 20px 40px -24px rgba(11,18,38,.5);padding:8px var(--gut) 22px;transform:translateY(-14px);opacity:0;pointer-events:none;transition:.28s var(--ease)}
   .navlinks.open{transform:none;opacity:1;pointer-events:auto}
   .navlinks a.lnk{width:100%;padding:15px 0;border-bottom:1px solid var(--line);font-size:17px}
   .navlinks .btn{margin-top:16px;width:100%;justify-content:center}
-  .navlinks .lang{padding-top:16px}
+  .navlinks .lang{display:none}
+  .lang-bar{display:flex}
   .menu-btn{display:block}
 }
 
@@ -156,6 +158,7 @@ footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
       <a class="btn" href="/#contact"><span>Book a call</span></a>
       <span class="lang"><a href="/join/" aria-current="true">EN</a><i>/</i><a href="/de/mitmachen/">DE</a></span>
     </nav>
+    <span class="lang lang-bar"><a href="/join/" aria-current="true">EN</a><i>/</i><a href="/de/mitmachen/">DE</a></span>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
