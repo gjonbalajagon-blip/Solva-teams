@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# source archives / bundles
+assets/files.zip
+*.zip
+
+# temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+*~
+.*.swp
+
+# editors and local tool settings
+.vscode/
+.idea/
+.claude/
+
+# dependencies (not used today, kept for safety)
+node_modules/

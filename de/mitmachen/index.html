@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solva Teams: In den Talentpool</title>
+<meta name="description" content="Sie sprechen Deutsch und suchen Arbeit im Support oder Back-Office in Prishtina? Tragen Sie sich ein, und wir melden uns, sobald eine passende Stelle frei wird.">
+<meta name="theme-color" content="#03082F">
+<link rel="canonical" href="https://solvateams.com/de/mitmachen/">
+<link rel="alternate" hreflang="en" href="https://solvateams.com/join/">
+<link rel="alternate" hreflang="de" href="https://solvateams.com/de/mitmachen/">
+<link rel="alternate" hreflang="x-default" href="https://solvateams.com/join/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
+<style>
+/* fonts (self-hosted) */
+/* latin-ext */
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/hanken-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/hanken-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* latin-ext */
+@font-face{font-family:'Schibsted Grotesk';font-style:normal;font-weight:500 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:'Schibsted Grotesk';font-style:normal;font-weight:500 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+:root{
+  --navy:#03082F;--navy-2:#0A1447;--panel:#111C4E;
+  --blue:#233DFF;--blue-d:#1731D7;--blue-l:#8796FF;--node:#4471F9;
+  --ink:#0B1226;--slate:#5A6478;--mist:#F4F6FC;--paper:#FFFFFF;
+  --line:#E2E7F2;--lineD:rgba(255,255,255,.14);--mutedD:rgba(226,231,245,.72);
+  --display:'Schibsted Grotesk',system-ui,sans-serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --maxw:1180px;--gut:clamp(20px,5vw,72px);--r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:700;line-height:1.04;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+::selection{background:var(--blue);color:#fff}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(145deg,var(--blue),var(--blue-d));color:#fff;font-family:var(--sans);font-weight:600;font-size:15.5px;padding:14px 26px;border-radius:999px;border:0;cursor:pointer;overflow:hidden;box-shadow:0 12px 30px -12px rgba(35,61,255,.7);transition:transform .2s var(--ease),box-shadow .3s var(--ease)}
+.btn span{position:relative;z-index:1}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,var(--blue-l),var(--blue));opacity:0;transition:opacity .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(35,61,255,.85)}
+.btn:hover::after{opacity:1}
+.btn[disabled]{opacity:.6;cursor:default;transform:none}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:60;height:72px;display:flex;align-items:center;transition:background .3s,box-shadow .3s,backdrop-filter .3s;background:transparent}
+.nav.solid{background:rgba(255,255,255,.72);backdrop-filter:saturate(160%) blur(14px);box-shadow:0 1px 0 var(--line),0 10px 30px -22px rgba(11,18,38,.5)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo{display:inline-flex;align-items:center;line-height:0}
+.logo img{height:30px;width:auto}
+.navlinks{display:flex;align-items:center;gap:32px}
+.navlinks a.lnk{color:var(--slate);font-size:15px;font-weight:600;transition:color .2s}
+.navlinks a.lnk:hover{color:var(--ink)}
+.lang{display:flex;gap:7px;font-size:13px;font-weight:700;color:var(--slate)}
+.lang a[aria-current=true]{color:var(--blue)}
+.lang i{opacity:.4;font-style:normal}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:8px}
+.menu-btn svg{width:26px;height:26px}
+@media(max-width:940px){
+  .navlinks{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);box-shadow:0 20px 40px -24px rgba(11,18,38,.5);padding:8px var(--gut) 22px;transform:translateY(-14px);opacity:0;pointer-events:none;transition:.28s var(--ease)}
+  .navlinks.open{transform:none;opacity:1;pointer-events:auto}
+  .navlinks a.lnk{width:100%;padding:15px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .navlinks .btn{margin-top:16px;width:100%;justify-content:center}
+  .navlinks .lang{padding-top:16px}
+  .menu-btn{display:block}
+}
+
+/* page header */
+.page-head{padding:clamp(120px,16vh,160px) 0 clamp(40px,6vw,64px);background:radial-gradient(ellipse 60% 50% at 88% 8%,#d9e1ff 0,transparent 55%),linear-gradient(120deg,#f3f6ff,#e9eeff 40%,#f7faff 65%,#e6ecff);border-bottom:1px solid var(--line)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}
+.page-head h1{margin-top:14px;font-size:clamp(36px,5.4vw,58px);letter-spacing:-.03em}
+.honest{margin-top:22px;max-width:64ch;background:rgba(255,255,255,.75);border:1px solid #d4ddf2;border-left:4px solid var(--blue);border-radius:var(--r);padding:18px 22px;color:#2B3346;font-size:16.5px}
+
+/* form */
+.apply{padding:clamp(44px,6vw,72px) 0 clamp(64px,9vw,110px)}
+.apply .col{max-width:640px}
+.fieldset{border:0;padding:0;margin:0 0 22px}
+.fieldset legend{padding:0;font-size:13px;font-weight:600;color:var(--slate);margin-bottom:9px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--slate);margin-bottom:7px}
+.field input[type=text],.field input[type=email],.field input[type=tel],.field select,.field textarea{width:100%;background:#fff;border:1px solid var(--line);border-radius:11px;color:var(--ink);font-family:inherit;font-size:16px;padding:13px 15px;transition:border-color .2s,box-shadow .2s}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--slate) 50%),linear-gradient(135deg,var(--slate) 50%,transparent 50%);background-position:calc(100% - 20px) calc(50% + 2px),calc(100% - 14px) calc(50% + 2px);background-size:6px 6px,6px 6px;background-repeat:no-repeat;padding-right:42px}
+.field textarea{resize:vertical;min-height:104px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(35,61,255,.12)}
+.field .hint{margin-top:7px;font-size:13px;color:var(--slate)}
+.field .msg{display:none;margin-top:6px;font-size:13px;color:#C2261B}
+.field.err input,.field.err select,.field.err textarea{border-color:#C2261B}
+.field.err .msg{display:block}
+.opt{font-weight:400;color:var(--slate)}
+.choices{display:flex;flex-wrap:wrap;gap:10px}
+.choice{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 18px;font-size:15px;cursor:pointer;transition:border-color .2s,background .2s}
+.choice:hover{border-color:#c7d0e6}
+.choice input{accent-color:var(--blue);width:17px;height:17px;margin:0}
+.consent{display:flex;gap:12px;align-items:flex-start;background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-size:15.5px;line-height:1.5;cursor:pointer}
+.consent input{accent-color:var(--blue);width:19px;height:19px;margin:2px 0 0;flex:0 0 auto}
+.consent a{color:var(--blue);border-bottom:1px solid rgba(35,61,255,.3)}
+.field.consent-field.err .consent{border-color:#C2261B}
+.apply .btn{width:100%;justify-content:center;margin-top:20px;padding:15px}
+.form-err{display:none;margin-top:14px;font-size:14.5px;color:#C2261B;text-align:center}
+.form-err a{color:var(--blue);border-bottom:1px solid rgba(35,61,255,.3)}
+.note{margin-top:14px;font-size:13px;color:var(--slate);text-align:center}
+.form-done{display:none;text-align:center;padding:26px 10px;background:var(--mist);border:1px solid var(--line);border-radius:20px}
+.form-done .tick{width:56px;height:56px;border-radius:50%;background:rgba(38,208,124,.16);color:#1B9E5F;display:grid;place-items:center;margin:0 auto 16px}
+.form-done p{margin-top:10px;color:#2B3346}
+.sent .form-inner{display:none}
+.sent .form-done{display:block}
+
+/* footer */
+footer{background:#02040f;color:var(--mutedD);padding:58px 0 40px}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;padding-bottom:32px;border-bottom:1px solid var(--lineD)}
+.foot-top .logo img{height:32px}
+.foot-cols{display:flex;flex-wrap:wrap;gap:44px}
+.foot-col h5{color:#fff;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin:0 0 12px;font-family:var(--sans)}
+.foot-col a,.foot-col span{display:block;font-size:14px;color:var(--mutedD);margin-bottom:8px}
+.foot-col a:hover{color:#fff}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:13px;color:rgba(226,231,245,.5)}
+.foot-bottom .lang a[aria-current=true]{color:#fff}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="/de/" aria-label="Solva Teams Startseite"><img src="/assets/logo-full-light.png" alt="Solva Teams"></a>
+    <nav class="navlinks" id="navlinks">
+      <a class="lnk" href="/de/#what">Was wir tun</a>
+      <a class="lnk" href="/de/#how">Wie wir arbeiten</a>
+      <a class="lnk" href="/de/#guarantees">Zusagen</a>
+      <a class="lnk" href="/de/#about">Über uns</a>
+      <a class="btn" href="/de/#contact"><span>Gespräch vereinbaren</span></a>
+      <span class="lang"><a href="/join/">EN</a><i>/</i><a href="/de/mitmachen/" aria-current="true">DE</a></span>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="kicker">Für Bewerber:innen</p>
+      <h1>In den Talentpool</h1>
+      <p class="honest">Wir bauen einen Pool deutschsprachiger Talente auf. Tragen Sie Ihre Angaben ein, und wir melden uns, sobald eine Rolle frei wird, die zu Ihnen passt. Wir können weder eine Stelle noch einen Zeitpunkt versprechen, aber starke Kandidat:innen hören zuerst von uns.</p>
+    </div>
+  </div>
+
+  <div class="apply">
+    <div class="wrap">
+      <div class="col" id="form">
+        <div class="form-inner">
+
+          <div class="field"><label for="f-name">Ihr Name</label><input id="f-name" type="text" placeholder="Vollständiger Name" autocomplete="name"><span class="msg">Bitte geben Sie Ihren Namen an.</span></div>
+
+          <div class="field"><label for="f-email">E-Mail</label><input id="f-email" type="email" placeholder="sie@beispiel.com" autocomplete="email"><span class="msg">Bitte geben Sie eine gültige E-Mail-Adresse an.</span></div>
+
+          <div class="field"><label for="f-phone">Telefon</label><input id="f-phone" type="tel" placeholder="+383 4x xxx xxx" autocomplete="tel"><span class="msg">Bitte geben Sie eine Telefonnummer an, unter der wir Sie erreichen.</span></div>
+
+          <div class="field"><label for="f-level">Ihr Deutschniveau</label>
+            <select id="f-level">
+              <option value="">Niveau wählen</option>
+              <option value="A2">A2</option>
+              <option value="B1">B1</option>
+              <option value="B2">B2</option>
+              <option value="C1">C1</option>
+              <option value="C2">C2</option>
+            </select>
+            <span class="msg">Bitte wählen Sie Ihr Deutschniveau.</span>
+          </div>
+
+          <fieldset class="fieldset field" id="fs-swiss">
+            <legend>Sprechen Sie Schweizerdeutsch?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="swiss" value="Ja"> Ja</label>
+              <label class="choice"><input type="radio" name="swiss" value="Nein"> Nein</label>
+            </div>
+            <span class="msg">Bitte wählen Sie ja oder nein.</span>
+          </fieldset>
+
+          <fieldset class="fieldset field" id="fs-roles">
+            <legend>Rollen, die Sie interessieren</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="roles" value="Kundensupport"> Kundensupport</label>
+              <label class="choice"><input type="checkbox" name="roles" value="Back-Office"> Back-Office</label>
+              <label class="choice"><input type="checkbox" name="roles" value="Beides"> Beides</label>
+            </div>
+            <span class="msg">Bitte wählen Sie mindestens eine Option.</span>
+          </fieldset>
+
+          <div class="field"><label for="f-salary">Gehaltsvorstellung <span class="opt">(optional)</span></label><input id="f-salary" type="text" placeholder="Zum Beispiel 600 EUR netto pro Monat"></div>
+
+          <div class="field"><label for="f-start">Ab wann könnten Sie anfangen?</label>
+            <select id="f-start">
+              <option value="">Bitte wählen</option>
+              <option value="Sofort">Sofort</option>
+              <option value="Innerhalb von 2 Wochen">Innerhalb von 2 Wochen</option>
+              <option value="Innerhalb eines Monats">Innerhalb eines Monats</option>
+              <option value="In 1 bis 3 Monaten">In 1 bis 3 Monaten</option>
+              <option value="Später">Später</option>
+            </select>
+            <span class="msg">Bitte wählen Sie, ab wann Sie anfangen könnten.</span>
+          </div>
+
+          <div class="field"><label for="f-cv">Lebenslauf oder LinkedIn</label><input id="f-cv" type="text" placeholder="https://..."><p class="hint">Laden Sie Ihren Lebenslauf zu Google Drive oder Dropbox hoch und fügen Sie den Link hier ein, oder geben Sie Ihr LinkedIn-Profil an. Bitte achten Sie darauf, dass der Link für alle mit dem Link zugänglich ist.</p><span class="msg">Bitte geben Sie einen Link zu Ihrem Lebenslauf oder LinkedIn-Profil an.</span></div>
+
+          <div class="field"><label for="f-msg">Was sollen wir sonst noch wissen? <span class="opt">(optional)</span></label><textarea id="f-msg" placeholder="Erfahrung im Support oder Back-Office, passende Schichten, weitere Sprachen."></textarea></div>
+
+          <div class="field consent-field" id="fs-consent">
+            <label class="consent"><input type="checkbox" id="f-consent"> <span>Ich bin einverstanden, dass Solva Teams meine Daten speichert, um mich für Rollen zu berücksichtigen, gemäß der <a href="/de/datenschutz/">Datenschutzerklärung</a>.</span></label>
+            <span class="msg">Ohne Ihr Einverständnis dürfen wir Ihre Angaben nicht speichern.</span>
+          </div>
+
+          <button class="btn" type="button" id="submitBtn"><span>In den Talentpool eintragen</span></button>
+          <p class="form-err" id="formErr" role="alert">Leider wurde Ihre Bewerbung nicht gesendet. Bitte versuchen Sie es erneut oder schreiben Sie an <a href="mailto:jobs@solvateams.com">jobs@solvateams.com</a>.</p>
+          <p class="note">Sie können jederzeit verlangen, dass wir Ihre Angaben löschen.</p>
+        </div>
+
+        <div class="form-done" id="formDone">
+          <div class="tick"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg></div>
+          <h2>Danke, Sie sind auf der Liste.</h2>
+          <p>Wir melden uns, sobald eine Rolle frei wird, die zu Ihnen passt. Das kann dauern, und eine Stelle können wir nicht versprechen, aber wir lesen jede Bewerbung.</p>
+          <p>Sollen wir Ihre Angaben löschen? Schreiben Sie an <a href="mailto:jobs@solvateams.com">jobs@solvateams.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="logo" href="/de/"><img src="/assets/logo-full-dark.png" alt="Solva Teams"></a>
+        <p style="margin-top:12px;max-width:34ch;font-size:14px">Deutschsprachige Support- und Back-Office-Teams, betrieben aus dem Kosovo. Das Team, das bleibt.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><h5>Unternehmen</h5><a href="/de/#what">Was wir tun</a><a href="/de/#how">Wie wir arbeiten</a><a href="/de/#about">Über uns</a></div>
+        <div class="foot-col"><h5>Kontakt</h5><a href="/de/#contact">Gespräch vereinbaren</a><a href="mailto:agon@solvateams.com">agon@solvateams.com</a><a href="mailto:jobs@solvateams.com">Mitarbeiten: jobs@</a></div>
+        <div class="foot-col"><h5>Rechtliches</h5><a href="/de/datenschutz/">Datenschutz</a><span>Solva Teams sh.p.k.</span></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Prishtina, Kosovo</span>
+      <span>&copy; <span id="yr"></span> Solva Teams sh.p.k.</span>
+      <span class="lang"><a href="/join/">EN</a> / <a href="/de/mitmachen/" aria-current="true">DE</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('solid',window.scrollY>20)};
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
+  mb.addEventListener('click',function(){var o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var form=document.getElementById('form'),btn=document.getElementById('submitBtn'),errEl=document.getElementById('formErr');
+  var re=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  function field(id){return document.getElementById(id).closest('.field');}
+  function mark(el,ok){el.classList.toggle('err',!ok);return ok;}
+  function checked(name){return [].slice.call(document.querySelectorAll('input[name="'+name+'"]:checked'));}
+
+  btn.addEventListener('click',function(){
+    var name=document.getElementById('f-name'),email=document.getElementById('f-email'),phone=document.getElementById('f-phone'),
+        level=document.getElementById('f-level'),salary=document.getElementById('f-salary'),start=document.getElementById('f-start'),
+        cv=document.getElementById('f-cv'),msg=document.getElementById('f-msg'),consent=document.getElementById('f-consent');
+    var swiss=checked('swiss'),roles=checked('roles'),ok=true;
+
+    ok=mark(field('f-name'),name.value.trim()!=='')&&ok;
+    ok=mark(field('f-email'),re.test(email.value.trim()))&&ok;
+    ok=mark(field('f-phone'),phone.value.replace(/[^0-9]/g,'').length>=6)&&ok;
+    ok=mark(field('f-level'),level.value!=='')&&ok;
+    ok=mark(document.getElementById('fs-swiss'),swiss.length===1)&&ok;
+    ok=mark(document.getElementById('fs-roles'),roles.length>0)&&ok;
+    ok=mark(field('f-start'),start.value!=='')&&ok;
+    ok=mark(field('f-cv'),cv.value.trim().length>3)&&ok;
+    ok=mark(document.getElementById('fs-consent'),consent.checked)&&ok;
+    if(!ok){document.querySelector('.field.err').scrollIntoView({block:'center'});return;}
+
+    var label=btn.querySelector('span'),idle=label.textContent;
+    errEl.style.display='none';
+    label.textContent='Wird gesendet…';btn.disabled=true;
+    var ENDPOINT='https://formspree.io/f/xppzgzre';
+    var payload={
+      type:'applicant',
+      _subject:'New applicant - talent pool',
+      name:name.value,
+      email:email.value,
+      phone:phone.value,
+      german_level:level.value,
+      swiss_german:swiss[0].value,
+      roles:roles.map(function(r){return r.value;}).join(', '),
+      salary_expectation:salary.value||'keine Angabe',
+      can_start:start.value,
+      cv_or_linkedin:cv.value,
+      message:msg.value,
+      consent:'Ja, Einwilligung zur Speicherung gemäß Datenschutzerklärung'
+    };
+    var done=function(){form.classList.add('sent');form.scrollIntoView({block:'center'});};
+    var fail=function(){errEl.style.display='block';label.textContent=idle;btn.disabled=false;};
+    fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){if(r.ok){done();}else{fail();}}).catch(fail);
+  });
+})();
+</script>
+</body>
+</html>
