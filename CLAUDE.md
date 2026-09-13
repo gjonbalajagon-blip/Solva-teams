@@ -39,7 +39,8 @@ Wording matters: the copy is deliberate and honest. Don't make it vaguer or more
 - **Never promise a job** to an applicant before a role exists. On applicant-facing copy, say *"we'll contact you when a matching role opens"* — never *"you will get a job/call."*
 - **Never quote a salary** as if it were a client's offer — only as our own market estimate.
 - **Honesty on experience:** Agon has **no BPO experience** and this is disclosed openly, never hidden. Team experience claims lean on Rrezon (call centres) and must stay accurate. Current site wording is *"over a decade running support floors"* — keep it exact, confirm figures with Rrezon.
-- **Imagery is illustrative** (licensed stock), **not** the real Solva team. Keep the "illustrative — not the Solva team" labelling until real photos exist.
+- **Imagery is licensed stock**, **not** the real Solva team. The site carries no caption or label saying so — don't add one back. Never write copy that claims or implies these are Solva's own people, office, or clients; keep alt text neutral and descriptive.
+- **The ARBK registration number never appears on the site** — not in the footer, not in the privacy pages, nowhere.
 - **GDPR:** anything that collects personal data (CVs, the contact form) needs consent and a live privacy policy before it goes public.
 - **Spend nothing** on paid tools/ads until there's a signed order or a clear reason.
 
